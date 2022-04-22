@@ -432,10 +432,7 @@ class RNNDecoderBase(nn.Module):
             attn = torch.matmul(a, image).squeeze(2)
 
             context_img = attn
-
-            #gate = self.gate(context_img)
-            #print(gate)
-            #img_gate = context_img
+            
             #img_gate = img_gate.reshape(tgt_batch,-1)
             #gate = self.sigmoid_linear(img_gate)
             #gate = self.sigmoid(gate)
